@@ -66,15 +66,16 @@ public class ViewController: UIViewController {
     }()
 
     lazy var closeButton: UIButton = {
-        let closeButton = UIButton(frame: CGRect.zero)
+        let closeButton = UIButton(type: .system)
         let imagePath = self.resourceBundle().path(forResource: "PhotoSliderClose", ofType: "png")
-        closeButton.setImage(UIImage(contentsOfFile: imagePath!), for: .normal)
+        closeButton.tintColor = UIColor(red: 198.0 / 255.0, green: 27.0 / 255.0, blue: 78.0 / 255.0, alpha: 1.0)
+        closeButton.setImage(UIImage(contentsOfFile: imagePath!)?.withRenderingMode(.alwaysTemplate), for: .normal)
         closeButton.addTarget(self, action: #selector(closeButtonDidTap(_:)), for: .touchUpInside)
         closeButton.imageView?.contentMode = UIViewContentMode.center
         closeButton.layer.shadowColor = UIColor.black.cgColor
         closeButton.layer.shadowOffset = CGSize(width: 1, height: 1)
         closeButton.layer.shadowRadius = 3
-        closeButton.layer.shadowOpacity = 1
+        closeButton.layer.shadowOpacity = 0.4
         return closeButton
     }()
 

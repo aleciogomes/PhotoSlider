@@ -42,7 +42,7 @@ public class ProgressView: UIView {
         ).cgPath
         progressLayer.backgroundColor = UIColor.clear.cgColor
         progressLayer.fillColor = UIColor.clear.cgColor
-        progressLayer.strokeColor = UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 0.2).cgColor
+        progressLayer.strokeColor = UIColor(red: 106.0 / 255.0, green: 108.0 / 255.0, blue: 117.0 / 255.0, alpha: 0.4).cgColor
         progressLayer.lineWidth = 4.0
         progressLayer.strokeStart = 0.0
         progressLayer.strokeEnd = 1.0
@@ -59,7 +59,7 @@ public class ProgressView: UIView {
         progressLayer.path = bezierPath.cgPath
         progressLayer.backgroundColor = UIColor.clear.cgColor
         progressLayer.fillColor = UIColor.clear.cgColor
-        progressLayer.strokeColor = UIColor.white.cgColor
+        progressLayer.strokeColor = UIColor(red: 198.0 / 255.0, green: 27.0 / 255.0, blue: 78.0 / 255.0, alpha: 1.0).cgColor
         progressLayer.lineWidth = 4.0
         progressLayer.strokeStart = 0.0
         progressLayer.strokeEnd = 0.0
